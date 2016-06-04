@@ -1,0 +1,35 @@
+.p-header {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  background-color: #222;
+
+  #{&}__nav {
+
+    #{&}__list {
+        float: right;
+
+      #{&}__item {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 10px;
+        margin: 0 10px;
+
+        #{&}__link {
+            color: #fafafa;
+            line-height: 50px;
+
+
+            &:hover {
+              border-bottom: 1px solid #fafafa;
+            }
+        }
+
+      }
+
+    }
+
+  }
+
+}

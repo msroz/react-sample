@@ -1,5 +1,7 @@
 'use strict';
 var gulp        = require('gulp');
+var plumber     = require('gulp-plumber');
+var notify      = require('gulp-notify');
 var browserify  = require('browserify');
 var babelify    = require('babelify');
 var source      = require('vinyl-source-stream');
@@ -13,11 +15,17 @@ gulp.task('browserify', function() {
     .bundle()
     .on("error", function (err) { console.log("Error : " + err.message); })
     .pipe(source('bundle.js'))
-    .pipe(gulp.dest('.dist/assets/js/'))
+    .pipe(gulp.dest('./dist/assets/js/'))
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./src/*.jsx', ['browserify'])
+  gulp.watch('./src/jsx/**/*.jsx', ['browserify', 'reload']);
+  gulp.watch('./src/app.jsx', ['browserify', 'reload']);
+  gulp.watch('./src/**/*.scss', ['scss']);
+});
+
+gulp.task('reload', function() {
+    browserSync.reload();
 });
 
 gulp.task('browser-sync', function() {
