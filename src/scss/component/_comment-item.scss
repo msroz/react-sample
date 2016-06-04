@@ -1,0 +1,11 @@
+.c-comment-item {
+  margin: 10px;
+  padding: 10px;
+
+  #{&}__author {
+    @include rem(1.4);
+  }
+
+  #{&}__text {
+  }
+}

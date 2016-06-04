@@ -1,0 +1,31 @@
+/////////////////////////////////////////////////////
+//
+//  FONT FAMILY
+//
+/////////////////////////////////////////////////////
+
+// serif体
+$basic-font-family-serif: "Hiragino Mincho ProN", "ヒラギノ明朝 ProN W3", "HG明朝E", "MS PMincho", "ＭＳ Ｐ明朝", serif;
+
+// sans-serif体
+$basic-font-family-sans-serif: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+
+
+
+/////////////////////////////////////////////////////
+//
+//  COLORS
+//
+/////////////////////////////////////////////////////
+$color-text: #333;
+$color-border: #ddd;
+$color-bg-sidebar: #333333;
+$color-text-footer: #e2e2e2;
+
+/////////////////////////////////////////////////////
+//
+//  BREAK POINTS
+//
+/////////////////////////////////////////////////////
+$breakpoint-small: 767px;
+$breakpoint-middle: 1023px;

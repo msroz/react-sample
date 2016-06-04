@@ -12,7 +12,7 @@ var CommentList = React.createClass({
     });
 
     return (
-      <div className="commentList">
+      <div className="commentList p-comment-list">
         { commentItems }
       </div>
     );

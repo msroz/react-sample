@@ -4,7 +4,7 @@ var CommentBox = require('./comment/commentBox.jsx');
 var Body = React.createClass({
   render: function() {
     return (
-      <div>
+      <div id="page-body">
         <CommentBox />
       </div>
     );

@@ -1,0 +1,21 @@
+@mixin clearfix {
+  *zoom: 1;
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+@mixin mq-small() {
+  @media only screen and (max-width: $breakpoint-small) { @content; }
+}
+
+@mixin mq-middle() {
+  @media only screen and (min-width: $breakpoint-small+1) and (max-width: $breakpoint-middle) { @content; }
+}
+
+@mixin rem($factor, $basic-font-size: 10px) {
+  font-size: $factor * $basic-font-size;
+  font-size: $factor+rem;
+}

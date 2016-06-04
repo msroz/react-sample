@@ -21,7 +21,7 @@ gulp.task('browserify', function() {
 gulp.task('watch', function() {
   gulp.watch('./src/jsx/**/*.jsx', ['browserify', 'reload']);
   gulp.watch('./src/app.jsx', ['browserify', 'reload']);
-  gulp.watch('./src/**/*.scss', ['scss']);
+  gulp.watch('./src/scss/**/*.scss', ['scss']);
 });
 
 gulp.task('reload', function() {
@@ -37,7 +37,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('scss', function() {
-  gulp.src("src/scss/**/*.scss")
+  gulp.src("./src/scss/**/*.scss")
     .pipe(sass())
     .on('error', function(err) {
       console.log(err.message)

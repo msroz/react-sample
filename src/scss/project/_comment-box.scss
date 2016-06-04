@@ -1,0 +1,7 @@
+.p-comment-box {
+  margin: 100px 0;
+
+  #{&}__title {
+    @include rem(1.6);
+  }
+}

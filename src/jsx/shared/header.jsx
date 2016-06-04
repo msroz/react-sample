@@ -3,7 +3,7 @@ var React = require("react");
 var Header = React.createClass({
   render: function() {
     return (
-      <header className="p-header">
+      <header id="page-header" className="p-header">
         <nav className="p-header__nav">
           <ul className="p-header__nav__list">
             <li className="p-header__nav__list__item">
